@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+    <html lang="en" class="jobspage">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Huy (HTML & CSS)">
+        <meta name="description" content="Jobs">
+        <title>Career - Tech Titans</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    
+
+<body class="jobs">
+    <!-- Navigation Bar -->
+    <nav class="nav_bar">
+        <ul>
+            <li><a href="./index.html" class="logo"><img src="./images/TechTitanLogo.jpg" alt="home page logo"></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button type="button" class="dropbutton">Career</button>
+                    <div class="dropdown-content">
+                        <a class="dropdown_link" href="jobs.html#frontend">Front-End Developer</a>
+                        <a class="dropdown_link" href="jobs.html#backend">Back-End Developer</a>
+                        <a class="dropdown_link" href="jobs.html#fullstack">Full-Stack Developer</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./apply.html">Application Form</a></li>
+            <li><a href="./enhancements.html">Enhancement</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <div class="right-nav">
+                <li><a href="https://www.facebook.com/profile.php?id=61573048452750">Contact</a></li>
+                <li><a href="./login.html">Login/Sign Up</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="bg-jobs-blur"></div>
+
+    <header>
+        <h1>Jobs at Tech Titans</h1>
+        <p>Join our team and build the future of technology.</p>
+    </header>
+
+    <aside class="filter-section">
+        <h2>Filter</h2>
+        <div class="filter-experience-level">
+          <h3>Experience Level</h3> 
+          <div class="experience-level-checkbox-list">
+            <div>
+              <input id="intern" type="checkbox" name="intern" checked>
+            <label for="intern">Intern</label>
+            </div>
+            <div>
+              <input id="entry" type="checkbox" name="entry level">
+            <label for="entry">Entry-Level</label>
+            </div>
+            <div>
+              <input id="junior" type="checkbox" name="junior">
+            <label for="junior">Junior</label>
+            </div>
+            <div>
+              <input id="senior" type="checkbox" name="senior">
+            <label for="senior">Senior</label>
+            </div>
+            <div>
+              <input  id="director" type="checkbox" name="director">
+            <label for="director">Director</label>
+            </div>
+            <div>
+              <input id="executive" type="checkbox" name="executive">
+            <label for="executive">Executive</label>
+            </div>
+          </div>
+            
+        </div>
+        <div class="filter-salary-range"> 
+          
+          <div class="slider-container">
+            <h3><label for="salaryRange">Salary Range</label></h3>
+            <input id="salaryRange" type="range" min="50000" max="500000" value="250000" class="slider">
+          </div>
+          
+        </div>
+        <div class="filter-work-place">
+          <h3>Work Place</h3>
+          <div class="work-place-checkbox-list">
+            <div>
+              <input id="office" type="checkbox" name="office">
+            <label for="office">Office</label>
+            </div>
+            <div>
+              <input id="on-site" type="checkbox" name="on-site">
+            <label for="on-site">On-site</label>
+            </div>
+            <div>
+              <input id="hybrid" type="checkbox" name="hybrid">
+            <label for="hybrid">Hybrid</label>
+            </div>
+            <div>
+              <input id="remote" type="checkbox" name="remote">
+            <label for="remote">Remote</label>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="button-container">
+          <button class="btn-sharp btn-fill filter-btn">Apply Filter</button>
+        </div>
+        
+      </aside>
+
+    <div class="job" id="frontend">
+        <h2 class="job-title">Front-End Developer</h2>
+        <button class="tag">FE101</button>
+        <div>
+          <p class="work-place"> <strong>Work Place</strong>
+          <button class="tag">Office</button>
+          <button class="tag">Hybrid</button>
+          </p>
+          <p class="experience-level"> <strong>Experience Level</strong>
+          <button class="tag">Junior</button>
+          <button class="tag">Senior</button>
+          </p>
+          <p class="salary-range"> <strong>Salary Range</strong>
+          <button class="tag">$60,000</button>
+          <span> - </span>
+          <button class="tag">$100,000</button>
+          </p>
+        </div>
+                <h3>Job Description:</h3>
+                <p>Position Reference Number: FE101</p>
+                <p>Position Title: Front-End Developer</p>
+                <p>Salary Range: $60,000 - $100,000 per year</p>
+                <p>Brief Description: Responsible for designing, developing, and optimizing user interfaces for web applications.</p>
+                <p>Reporting Manager: Lead UI/UX Engineer</p>
+                <p>Key Responsibilities:</p>
+                <ol>
+                    <li>Develop interactive and responsive web applications.</li>
+                    <li>Collaborate with designers to ensure seamless UI/UX implementation.</li>
+                    <li>Optimize applications for speed and scalability.</li>
+                    <li>Maintain and improve the codebase following best practices.</li>
+                    <li>Work with back-end developers to integrate APIs.</li>
+                </ol>
+                <p>Requirements:</p>
+                <ul>
+                  <li>Essential:
+                    <ul>
+                    <li>Proficiency in HTML, CSS, JavaScript, and frameworks like React or Vue.js.</li>
+                    <li>At least 1 years of experience in front-end development.</li>
+                    <li>Understanding of responsive design and accessibility best practices.</li>
+                  </ul>
+                </li>
+                <li>Preferable:
+                <ul>
+                    <li>Experience with TypeScript and Webpack.</li>
+                    <li>Familiarity with UX/UI design principles.</li>
+                </ul>
+                </li>
+            </ul>
+       </div>
+
+     <div class="job" id="backend">
+        <h2 class="job-title">Back-End Developer</h2>
+        <button class="tag">BE102</button>
+        <div>
+          <p class="work-place"> <strong>Work Place</strong>
+          <button class="tag">On-site</button>
+          <button class="tag">Hybrid</button>
+          </p>
+          <p class="experience-level"> <strong>Experience Level</strong>
+          <button class="tag">Senior</button>
+          </p>
+          <p class="salary-range"> <strong>Salary Range</strong>
+          <button class="tag">$90,000</button>
+          <span> - </span>
+          <button class="tag">$120,000</button>
+          </p>
+        </div>
+              <h3>Job Description:</h3>
+              <p>Position Reference Number: BE102</p> 
+              <p>Position Title: Back-End Developer</p>
+              <p>Brief Description: Responsible for designing, building, and maintaining the server-side logic and databases.</p>
+              <p>Salary Range: $90,000 - $120,000 per year</p>
+              <p>Reporting Manager: Software Engineering Manager</p>
+              <p>Key Responsibilities:</p>
+                <ol>
+                    <li>Develop and maintain server-side applications and APIs.</li>
+                    <li>Optimize databases and ensure data security.</li>
+                    <li>Collaborate with front-end developers to ensure smooth integration.</li>
+                    <li>Improve application performance and scalability.</li>
+                    <li>Conduct code reviews and implement best coding practices.</li>
+                </ol>
+                <p>Requirements:</p>
+                <ul>
+                <li>Essential:
+                <ul>
+                    <li>Proficiency in Node.js, Python, or Java.</li>
+                    <li>At least 3 years of experience in back-end development.</li>
+                    <li>Experience with database management (SQL, MongoDB, etc.).</li>
+                </ul>
+                </li>
+                <li>Preferable:
+                <ul>
+                    <li>Knowledge of cloud services like AWS or Azure.</li>
+                    <li>Experience with CI/CD pipelines.</li>
+                </ul>
+                </li>
+                </ul>
+    </div>
+    <div class="job" id="fullstack">
+      <h2 class="job-title">Full-Stack Developer</h2>
+      <button class="tag">FS103</button>
+      <div>
+        <p class="work-place"> <strong>Work Place</strong>
+        <button class="tag">Remote</button>
+        </p>
+        <p class="experience-level"> <strong>Experience Level</strong>
+        <button class="tag">Director</button>
+        </p>
+        <p class="salary-range"> <strong>Salary Range</strong>
+        <button class="tag">$120,000</button>
+        <span> - </span>
+        <button class="tag">$160,000</button>
+        </p>
+      </div>
+        <h3>Job Description:</h3>
+        <p>Position Reference Number: FS103</p>
+        <p>Position Title: Full-Stack Developer</p>
+        <p>Brief Description: Responsible for developing and maintaining both front-end and back-end components of web applications.</p>
+        <p>Salary Range: $120,000 - $160,000 per year</p>
+        <p>Reporting Manager: Chief Technology Officer</p>
+        <p>Key Responsibilities:</p>
+        <ol>
+            <li>Develop and maintain both frontend and backend components of web applications.</li>
+            <li>Collaborate with designers and frontend developers to implement user-facing features.</li>
+            <li>Design and implement RESTful APIs for seamless communication between frontend and backend systems.</li>
+            <li>Optimize applications for performance and scalability.</li>
+            <li>Conduct code reviews and ensure coding standards and best practices are followed.</li>
+        </ol>
+        <p>Requirements: </p>
+        <ul>
+        <li>Essential:
+        <ul>
+            <li>Proficiency in both front-end (React, Vue.js) and back-end (Node.js, Python, Java).</li>
+            <li>At least 5 years of experience in full-stack development.</li>
+            <li>Experience with RESTful APIs and microservices architecture.</li>
+        </ul>
+        </li>
+        <li>Preferable
+        <ul>
+            <li>Experience with DevOps practices.</li>
+            <li>Familiarity with containerization (Docker, Kubernetes).</li>     
+        </ul>
+        </li>
+        </ul>
+      </div>
+
+    
+
+
+    <!-- Footer -->
+
+    
+    
+<!-- Footer -->
+<footer class="footer-layout">
+    <div class="footer-column">
+        <p><em>A35 Bach Dang<br>Tan Binh District<br>Ho Chi Minh City<br>Vietnam</em></p>
+    </div>
+    <div class="footer-column">
+        <p>AI-powered Solutions<br>Machine Learning Research<br>Cloud Computing<br>Data Science</p>
+    </div>
+    <div class="footer-column">
+        <p><strong>Acknowledgements</strong><br><a href="https://www.w3schools.com/">W3Cchools</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a><br><a href="https://html.com/">html.com</a>
+    </div>
+    <div class="footer-column">
+        <p>AI Ethics & Compliance<br>Big Data Processing<br>Natural Language Processing<br>AI Security</p>
+    </div>
+    <div class="footer-column">
+        <p>Contribute<br>Innovate<br>Explore Careers<br>Tech Blog</p>
+    </div>
+    <div class="footer-column">
+        <p>AI-driven Insights<br>Deep Learning Models<br>Tech Conferences<br>Industry Partnerships</p>
+    </div>
+    <div class="footer-bottom">
+      <p><a href="https://www.linkedin.com/">Linkedln</a></p>
+      <p><a href="https://youtu.be/0Sdopn8jm60">YouTube</a></p>
+      <p>Phone: +123-456-789<br>info@techtitans.com</p>
+      <p>&copy; Tech Titans 2024. All rights reserved</p>
+  </div>
+</footer>
+</body>
+</html>

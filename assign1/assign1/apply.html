@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tech Titans - Job Application Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Duyen (HTML & CSS)">
+    <title>Job Application Form - Tech Titans</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Icon.jpg">
+</head>
+
+<body id="apply-body">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="./index.html" class="logo"><img src="./images/TechTitanLogo.jpg" alt="home page logo"></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button type="button" class="dropbutton">Career</button>
+                        <div class="dropdown-content">
+                            <a class="dropdown_link" href="jobs.html#frontend">Front-End Developer</a>
+                            <a class="dropdown_link" href="jobs.html#backend">Back-End Developer</a>
+                            <a class="dropdown_link" href="jobs.html#fullstack">Full-Stack Developer</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./apply.html">Application Form</a></li>
+                <li><a href="./enhancements.html">Enhancement</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <div class="right-nav">
+                    <li><a href="https://www.facebook.com/profile.php?id=61573048452750">Contact</a></li>
+                    <li><a href="./login.html">Login/Sign Up</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="apply-container">
+            <div id="apply-image-container">
+                <img id="apply-image" src="./images/Apply-image.jpg" alt="">
+            </div>
+            <div id="apply-form-container">
+                <h1 id="apply-title">Job Application Form</h1>
+                <form class="form_apply" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                    
+                    <!-- Job Reference -->
+                    <label class="label_apply" for="jobRef">Job Reference Number:</label>
+                    <input class="input_apply" type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{5}" required placeholder="Enter job reference number...">
+
+                    <!-- First Name -->
+                    <label class="label_apply" for="firstName">First Name:</label>
+                    <input class="input_apply" type="text" id="firstName" name="firstName" maxlength="20" pattern="[A-Za-z]+" required placeholder="Enter first name...">
+                    
+                    <!-- Last Name -->
+                    <label class="label_apply" for="lastName">Last Name:</label>
+                    <input class="input_apply" type="text" id="lastName" name="lastName" maxlength="20" pattern="[A-Za-z]+" required placeholder="Enter last name...">
+
+                    <!-- Email -->
+                    <label class="label_apply" for="email">Email Address:</label>
+                    <input class="input_apply" type="email" id="email" name="email" required placeholder="Enter email address...">
+
+                    <!-- Date of Birth -->
+                    <label class="label_apply" for="dob">Date of Birth:</label>
+                    <input class="input_apply" type="date" id="dob" name="dob" required>
+
+                    <!-- Gender -->
+                    <fieldset class="fieldset_apply">
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="non-binary" name="gender" value="non-binary" required>
+                        <label for="non-binary">Non-binary</label>
+                        <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say" required>
+                        <label for="prefer_not_to_say">Prefer Not To Say</label>
+                    </fieldset>
+
+                    <!-- Address -->
+                    <fieldset class="fieldset_apply">
+                        <legend class="legend-apply">Address</legend>
+                        <label class="label_apply" for="streetAddress">Street Address:</label>
+                        <input class="input_apply" type="text" id="streetAddress" name="streetAddress" maxlength="40" required placeholder="Enter Street Address...">
+
+                        <label class="label_apply" for="suburbtown">Suburb/Town:</label>
+                        <input class="input_apply" type="text" id="suburbtown" name="suburbtown" maxlength="40" required placeholder="Enter Suburb/town...">
+
+                        <label class="label_apply" for="state">State:</label>
+                        <select class="input_apply" id="state" name="state" required>
+                            <option value="">Select State</option>
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+
+                        <label class="label_apply" for="postcode">Postcode:</label>
+                        <input class="input_apply" type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" required placeholder="Enter Postcode...">
+                    </fieldset>
+
+                    <!-- Phone -->
+                    <label class="label_apply" for="phone">Phone Number:</label>
+                    <input class="input_apply" type="tel" id="phone" name="phone" pattern="[0-9\s]{8,12}" required placeholder="Enter phone number...">
+
+                    <!-- Skill List -->
+                    <fieldset class="fieldset_apply">
+                        <legend class="legend-apply">Skill List</legend>
+                        <label for="html"><input type="checkbox" id="html" name="html" value="html" checked> HTML</label>
+                        <label for="css"><input type="checkbox" id="css" name="css" value="css"> CSS</label>
+                        <label for="javascript"><input type="checkbox" id="javascript" name="javascript" value="javascript"> Javascript</label>
+                        <label for="php"><input type="checkbox" id="php" name="php" value="php"> PHP</label>
+                        <label for="mysql"><input type="checkbox" id="mysql" name="mysql" value="mysql"> MySQL</label>
+                        <label for="otherskills"><input type="checkbox" id="otherskills" name="otherskills" value="otherskills"> Other Skills</label>
+                    </fieldset>
+
+                    <!-- Other Skills -->
+                    <label class="label_apply" for="otherSkills">Other Skills:</label>
+                    <textarea class="input_apply" id="otherSkills" name="otherSkills" placeholder="List any other relevant skills..."></textarea>
+
+                    <!-- Submit & Reset -->
+                    <div class="apply-reset-button">
+                        <button type="submit">Apply</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-layout">
+        <div class="footer-column">
+            <p><em>A35 Bach Dang<br>Tan Binh District<br>Ho Chi Minh City<br>Vietnam</em></p>
+        </div>
+        <div class="footer-column">
+            <p>AI-powered Solutions<br>Machine Learning Research<br>Cloud Computing<br>Data Science</p>
+        </div>
+        <div class="footer-column">
+            <p><strong>Acknowledgements</strong><br><a href="https://www.w3schools.com/">W3Cchools</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a><br><a href="https://html.com/">html.com</a>
+        </div>
+        <div class="footer-column">
+            <p>AI Ethics & Compliance<br>Big Data Processing<br>Natural Language Processing<br>AI Security</p>
+        </div>
+        <div class="footer-column">
+            <p>Contribute<br>Innovate<br>Explore Careers<br>Tech Blog</p>
+        </div>
+        <div class="footer-column">
+            <p>AI-driven Insights<br>Deep Learning Models<br>Tech Conferences<br>Industry Partnerships</p>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="https://www.linkedin.com/">Linkedln</a></p>
+            <p><a href="https://youtu.be/0Sdopn8jm60">YouTube</a></p>
+            <p>Phone: +123-456-789<br>info@techtitans.com</p>
+            <p>&copy; Tech Titans 2024. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
