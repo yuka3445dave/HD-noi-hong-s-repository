@@ -1,0 +1,6 @@
+Week 6: Finalized team roles and delegated pages for development.
+Week 7: Agreed on color scheme, font family and layout grid system.
+Week 8: Finished HTML/CSS structure for all pages, integrated PHP includes.
+Week 9: Set up database schema for EOI table and jobs table.
+Week 10: Debugged process_eoi.php and validate backend input.
+Week 11: Final testing, added enhancements, prepared for presentation.
