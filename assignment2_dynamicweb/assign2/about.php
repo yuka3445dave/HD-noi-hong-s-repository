@@ -72,6 +72,7 @@
                                     <li>Created the Login and Register pages with HTML</li>
                                     <li>Researched and gathered information for the Job page</li>
                                     <li>Ensured a user-friendly layout for job listings and authentication pages</li>
+                                    <li>Create a web page manage.php that allows a manager to make the following queries of the eoi table </li>
                                 </ul>
                             </dd>
                     </dl>
@@ -88,10 +89,10 @@
                             <dd>
                                 <ul>
                                     <li>Created the HTML and CSS for the Apply page</li>
-                                    <li>Searched for images to enhance the website's visuals</li>
-                                    <li>Designed a job recruitment poster for the Apply page</li>
                                     <li>Developed the Contact page for user inquiries</li>
                                     <li>Edited and finalized the introduction video for the website</li>
+                                    <li>Create an EOI table and create the file "process_eoi.php" to add an EOI record to the table</li>
+                                    <li>Create a "confirmation.php" page to notify users that they have successfully applied.</li>
                                 </ul>
                             </dd>
                     </dl>
@@ -106,9 +107,10 @@
                             <dt>Contributions:</dt>
                             <dd>
                                 <ul>
-                                    <li>Developed the HTML and CSS for the About page</li>
-                                    <li>Created the HTML and CSS for the Enhancement page</li>
-                                    <li>Ensured all pages can be linked with one another</li>
+                                    <li>Transform the job page into a dynamic platform that interacts with myAdminPHP database</li>
+                                    <li>Create a database table for user account management</li>
+                                    <li>Implement authentication for login/register with proper validation</li>
+                                    <li>Implement password recovery for better user experience</li>
                                 </ul>
                             </dd>
                     </dl>
